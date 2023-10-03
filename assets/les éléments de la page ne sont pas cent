@@ -1,0 +1,14 @@
+les éléments de la page ne sont pas centrés
+ajustements des valeurs sur les paddings 
+
+section fonctionnement
+1- pour positionner  un élément dans un bloc on met on met le bloc en relative et l'élément en absolue
+2- j'ai travaillé le premier article ensuite j'ai dupliqué et changé les titres en fonction 
+
+pour la couleur du 3em icon de la liste des articles j'ai rajouté la claas primary sur l'element 
+ensuite j'ai défini la couleur des deux premiers éléments
+et ciblé en dernier l'elément en question avec l'esperliette primary  
+
+
+l'icon coeur violet devait etre en gradiant mais sur le css il n'a pas moyen de l'appliquer
+taille de l'icon 20px

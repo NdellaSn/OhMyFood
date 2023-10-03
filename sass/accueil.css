@@ -1,0 +1,155 @@
+body {
+  background-color: #eaeaea;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main .main__reservation {
+  padding-top: 39px;
+  padding-bottom: 57px;
+  padding-left: 34px;
+  padding-right: 34px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.main .main__reservation__title {
+  margin-bottom: 12px;
+}
+.main .main__reservation__texte {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 31px;
+}
+.main .main__reservation__button {
+  height: 50px;
+  width: 218px;
+  background: linear-gradient(193deg, #9b56dc -11.44%, #ff79da 123.93%);
+  border: none;
+  padding: 13px 18.75px;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+.main .main__fonctionnement {
+  background: white;
+  padding-top: 48px;
+  padding-bottom: 68px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.main .main__fonctionnement .main__fonctionnement__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24.9px;
+  padding-left: 12px;
+}
+.main .main__fonctionnement .main__fonctionnement__list .main__fonctionnement__list__article {
+  position: relative;
+}
+.main .main__fonctionnement .main__fonctionnement__list .main__fonctionnement__list__article .main__fonctionnement__list__article__numero {
+  width: 24px;
+  height: 24px;
+  background: #9356dc;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  position: absolute;
+  top: 27px;
+  left: -12px;
+}
+.main .main__fonctionnement .main__fonctionnement__list .main__fonctionnement__list__article .main__fonctionnement__list__article__choix {
+  background-color: #f6f6f6;
+  padding: 27px 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.main .main__fonctionnement .main__fonctionnement__list .main__fonctionnement__list__article .main__fonctionnement__list__article__choix .main__fonctionnement__list__article__choix__icon {
+  color: #7e7e7e;
+}
+.main .main__fonctionnement .main__fonctionnement__list .main__fonctionnement__list__article .main__fonctionnement__list__article__choix .main__fonctionnement__list__article__choix__icon--primary {
+  color: #9356dc;
+}
+.main .main__fonctionnement .main__fonctionnement__list .main__fonctionnement__list__article .main__fonctionnement__list__article__choix .main__fonctionnement__list__article__choix__title {
+  font-weight: 500;
+  font-size: 16px;
+}
+.main .main__restaurants {
+  padding-top: 54px;
+  padding-bottom: 66px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .main__restaurants .main__restaurants__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: white;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__header {
+  position: relative;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__header .main__restaurants__list__article__header__image {
+  height: 241px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__header .main__restaurants__list__article__header__tag {
+  position: absolute;
+  background: #99e2d0;
+  color: #008766;
+  padding: 7px 9px;
+  border-radius: 2px;
+  right: 15px;
+  top: 13px;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 13px;
+  align-items: center;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon {
+  font-size: 20px;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon--primaire {
+  color: #9356dc;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text .main__restaurants__list__article__text__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text .main__restaurants__list__article__text__corps {
+  font-size: 17px;
+  font-weight: 300;
+}/*# sourceMappingURL=accueil.css.map */

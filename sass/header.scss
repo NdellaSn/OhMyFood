@@ -1,0 +1,19 @@
+@import "./global.scss";
+
+.header {
+  @include flex(column);
+  justify-content: center;
+
+  .header__logo {
+    padding: 14px 106px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 15%);
+    background-color: white;
+  }
+
+  .header__localisation {
+    @include flex(row);
+    justify-content: space-between;
+    padding: 15px 30%;
+    font-size: 19px;
+  }
+}
