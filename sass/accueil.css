@@ -107,6 +107,8 @@ body {
   flex-direction: column;
   border-radius: 15px;
   background: white;
+  text-decoration: none;
+  color: black;
 }
 .main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__header {
   position: relative;

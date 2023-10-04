@@ -101,6 +101,8 @@ body {
         @include flex(column);
         border-radius: 15px;
         background: white;
+        text-decoration: none;
+        color: black;
 
         .main__restaurants__list__article__header {
           position: relative;
