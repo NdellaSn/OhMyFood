@@ -1,0 +1,21 @@
+
+// déclartion des mixins
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+  }
+  
+  @mixin button($width) {
+    height: 50px;
+    width: $width;
+    background: $Gradient-bg;
+    border: none;
+    padding: 13px 18.75px;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 25%);
+  }
+  

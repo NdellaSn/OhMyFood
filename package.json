@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 4",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./assets/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NdellaSn/OhMyFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NdellaSn/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/NdellaSn/OhMyFood#readme",
+  "dependencies": {
+    "sass": "^1.69.0"
+  }
+}

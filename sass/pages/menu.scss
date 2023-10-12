@@ -1,0 +1,106 @@
+.menu .header {
+  @include flex(row);
+  align-items: center;
+  justify-content: flex-start;
+  gap: 42px;
+  padding: 0 17px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+	background: white;
+	
+  .header__logo {
+    width: 162px;
+    padding: 14px 34px;
+    box-shadow: none;
+  }
+}
+
+.main {
+  width: 100%;
+  background: $Background-gray;
+
+  .main__image {
+    width: 100%;
+    height: 274px;
+    object-fit: cover;
+  }
+
+  .main__menu {
+    background: $Background-gray;
+
+    position: relative;
+    border-radius: 40px 40px 0 0;
+    padding: 32px 17px;
+    top: -50px;
+    @include flex(column);
+    gap: 40px;
+
+    .main__menu__header {
+      @include flex(row);
+      justify-content: space-between;
+      align-items: center;
+
+      .main__menu__header__title {
+        font-family: Shrikhand;
+        font-size: 28px;
+        font-weight: 400;
+      }
+      .main__menu__header__icon {
+        padding-right: 24px;
+        font-size: 20px;
+      }
+    }
+
+    .main__menu__commande {
+      @include flex(column);
+      gap: 12px;
+
+      .main__menu__commande__header {
+        @include flex(column);
+
+        .main__menu__commande__header__title {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+
+        .main__menu__commande__header__ligne {
+          border-top: 4px solid #99e2d0;
+          width: 40px;
+        }
+      }
+
+      .main__menu__commande__article {
+        padding: 15px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+
+        .main__menu__commande__article__title {
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        .main__menu__commande__article__detail {
+          @include flex(row);
+          justify-content: space-between;
+          font-size: 15x;
+          margin-top: 5px;
+
+          .main__menu__commande__article__detail__description {
+            font-weight: 300;
+          }
+
+          .main__menu__commande__article__detail__prix {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .main__menu__button {
+      @include button(186px);
+      align-self: center;
+    }
+  }
+}

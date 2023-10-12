@@ -1,0 +1,157 @@
+
+body {
+  background-color: $Gyey-2;
+}
+
+.main {
+  @include flex(column);
+
+  .main__reservation {
+    padding-top: 39px;
+    padding-bottom: 57px;
+    padding-left: 34px;
+    padding-right: 34px;
+    background-color: $Background-gray;
+    text-align: center;
+
+    &__title {
+      margin-bottom: 12px;
+    }
+
+    &__texte {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 31px;
+    }
+    &__button {
+      @include button(218px);
+    }
+  }
+
+  .main__fonctionnement {
+    background: white;
+    padding-top: 48px;
+    padding-bottom: 68px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include flex(column);
+    gap: 26px;
+
+    .main__fonctionnement__list {
+      @include flex(column);
+      gap: 24.9px;
+      padding-left: 12px;
+      .main__fonctionnement__list__article {
+        position: relative;
+
+        .main__fonctionnement__list__article__numero {
+          width: 24px;
+          height: 24px;
+          background: $primaire;
+          color: white;
+          @include flex(row);
+          justify-content: center;
+          align-items: center;
+          border-radius: 12px;
+          position: absolute;
+          top: 27px;
+          left: -12px;
+        }
+
+        .main__fonctionnement__list__article__choix {
+          background-color: $Background-gray;
+          padding: 27px 35px;
+          @include flex(row);
+          gap: 23px;
+          border-radius: 20px;
+          font-size: 16px;
+          font-weight: 500;
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+          .main__fonctionnement__list__article__choix__icon {
+            color: $Grey-tint-4;
+            &--primary {
+              color: $primaire;
+            }
+          }
+
+          .main__fonctionnement__list__article__choix__title {
+            font-weight: 500;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .main__restaurants {
+    padding-top: 54px;
+    padding-bottom: 66px;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include flex(column);
+    gap: 20px;
+
+    .main__restaurants__list {
+      @include flex(column);
+      gap: 18px;
+
+      .main__restaurants__list__article {
+        @include flex(column);
+        border-radius: 15px;
+        background: white;
+        text-decoration: none;
+        color: black;
+
+        .main__restaurants__list__article__header {
+          position: relative;
+
+          .main__restaurants__list__article__header__image {
+            height: 241px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+          }
+
+          .main__restaurants__list__article__header__tag {
+            position: absolute;
+            background: $Tertiaire;
+            color: $Green-font;
+            padding: 7px 9px;
+            border-radius: 2px;
+            right: 15px;
+            top: 13px;
+          }
+        }
+
+        .main__restaurants__list__article__footer {
+          @include flex(row);
+          justify-content: space-between;
+          padding: 13px;
+          align-items: center;
+
+          .main__restaurants__list__article__footer__icon {
+            font-size: 20px;
+            &--primaire {
+              color: $primaire;
+            }
+          }
+
+          .main__restaurants__list__article__footer__text {
+            @include flex(column);
+            gap: 5px;
+
+            .main__restaurants__list__article__text__title {
+              font-size: 18px;
+              font-weight: 700;
+            }
+            .main__restaurants__list__article__text__corps {
+              font-size: 17px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}

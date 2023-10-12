@@ -1,0 +1,25 @@
+
+
+footer {
+  padding: 22px 25px;
+  background: $Grey;
+
+  .footer__logo {
+    width: 134px;
+    height: 27px;
+    margin-bottom: 16px;
+  }
+
+  .footer__navigation {
+    list-style: none;
+    @include flex(column);
+    gap: 7px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .footer__navigation__link {
+    text-decoration: none;
+    color: white;
+  }
+}
