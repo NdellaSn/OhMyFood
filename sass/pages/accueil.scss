@@ -132,8 +132,25 @@ body {
 
           .main__restaurants__list__article__footer__icon {
             font-size: 20px;
-            &--primaire {
+            &--solid {
               color: $primaire;
+              display: none;
+            }
+
+            &--border{
+              display: block;
+            }
+
+            i {
+              transition: display;
+            }
+            
+            &:hover .main__restaurants__list__article__footer__icon--solid{
+              display: block;
+            }
+
+            &:hover .main__restaurants__list__article__footer__icon--border{
+              display: none;
             }
           }
 

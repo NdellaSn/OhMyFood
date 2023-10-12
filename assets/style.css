@@ -191,8 +191,21 @@ body {
 .main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon {
   font-size: 20px;
 }
-.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon--primaire {
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon--solid {
   color: #9356dc;
+  display: none;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon--border {
+  display: block;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon i {
+  transition: display;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon:hover .main__restaurants__list__article__footer__icon--solid {
+  display: block;
+}
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon:hover .main__restaurants__list__article__footer__icon--border {
+  display: none;
 }
 .main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text {
   display: flex;
