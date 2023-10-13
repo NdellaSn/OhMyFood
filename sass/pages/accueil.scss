@@ -8,23 +8,76 @@ body {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   z-index: 99;
-  display: flex;
-  flex-direction: column;
+  display: flex; // flex a mettre
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  animation-name: loader-block;
-  animation-delay: 3s;
+  gap: 10px;
+  animation-name: loader;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 
-  img {
-    width: 25%;
+  .point {
+    width: 20px;
+    height: 20px;
+    background-color: $primaire;
+    border-radius: 10px;
+    &:nth-of-type(1) {
+      animation-name: aller-retour;
+      animation-duration: 1000ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+    }
+
+    &:nth-of-type(3) {
+      background-color: red;
+    }
+
+    @for $i from 2 through 5 {
+      &:nth-of-type(#{$i}) {
+        background-color: lighten($primaire, $amount: $i * 5);
+        animation-name: rotation1;
+        animation-duration: 130ms;
+        animation-timing-function: ease-in-out;
+        animation-delay: calc($i - 1) * 200ms;
+        animation-fill-mode: forwards;
+      }
+    }
   }
 }
 
-@keyframes loader-block {
-  0% {
+@keyframes rotation1 {
+  from {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-15px, -30px);
+  }
+
+  to {
+    transform: translate(-30px, 0px);
+  }
+}
+
+@keyframes aller-retour {
+  from {
+    transform: translateX(0);
+    background-color: $primaire;
+  }
+
+  to {
+    transform: translateX(120px);
+    background-color: lighten($primaire, $amount: 65);
+  }
+}
+
+@keyframes loader {
+  from {
     display: flex;
   }
-  100% {
+  to {
     display: none;
   }
 }

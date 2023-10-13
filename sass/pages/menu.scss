@@ -5,8 +5,8 @@
   gap: 42px;
   padding: 0 17px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-	background: white;
-	
+  background: white;
+
   .header__logo {
     width: 162px;
     padding: 14px 34px;
@@ -14,6 +14,36 @@
   }
 }
 
+@keyframes commande {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes commande-etape {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
 .main {
   width: 100%;
   background: $Background-gray;
@@ -53,6 +83,16 @@
     .main__menu__commande {
       @include flex(column);
       gap: 12px;
+      animation-name: commande;
+      animation-duration: 1500ms;
+      opacity: 0;
+      animation-fill-mode: forwards;
+
+      @for $i from 1 through 3 {
+        &:nth-of-type(#{$i}) {
+          animation-delay: 500ms * $i;
+        }
+      }
 
       .main__menu__commande__header {
         @include flex(column);
@@ -71,10 +111,34 @@
       }
 
       .main__menu__commande__article {
-        padding: 15px;
         background: white;
         border-radius: 15px;
         box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+        @include flex(row);
+        overflow: hidden;
+
+        & > * {
+          padding: 15px;
+        }
+
+        .main__menu__commande__article__main {
+          width: 100%;
+          &:hover + .main__menu__commande__article__aside {
+            margin-right: 0;
+          }
+        }
+        .main__menu__commande__article__aside {
+          background-color: $Tertiaire;
+          border-radius: 0 15px 15px 0;
+          @include flex(column);
+          justify-content: center;
+          margin-right: -46px;
+          transition: margin-right 300ms ease-in-out;
+
+          i {
+            color: white;
+          }
+        }
 
         .main__menu__commande__article__title {
           font-size: 18px;

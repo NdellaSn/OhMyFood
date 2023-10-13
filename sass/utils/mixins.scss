@@ -18,7 +18,7 @@
     font-weight: 400;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 25%);
 
-    transition: all 300ms ease-in-out;
+    transition: background 300ms ease-in-out, box-shadow 300ms ease-in-out ;
       &:hover,
       &:active {
         background: linear-gradient(
