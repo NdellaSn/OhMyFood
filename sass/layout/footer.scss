@@ -1,13 +1,18 @@
-
-
 footer {
   padding: 22px 25px;
   background: $Grey;
+  @media (min-width: $tailleDesktop) {
+    @include flex(row-reverse);
+    gap: 30px;
+  }
 
   .footer__logo {
     width: 134px;
     height: 27px;
     margin-bottom: 16px;
+    @media (min-width: $tailleDesktop) {
+      width: 110px;
+    }
   }
 
   .footer__navigation {
@@ -16,6 +21,11 @@ footer {
     gap: 7px;
     font-size: 16px;
     font-weight: 500;
+
+    @media (min-width: $tailleDesktop) {
+      @include flex(row);
+      gap: 15px;
+    }
   }
 
   .footer__navigation__link {

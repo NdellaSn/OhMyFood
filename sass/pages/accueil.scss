@@ -1,5 +1,8 @@
 body {
   background-color: $Gyey-2;
+  @media (min-width: $tailleDesktop) {
+    background-color: white;
+  }
 }
 
 .loader {
@@ -28,10 +31,6 @@ body {
       animation-duration: 1000ms;
       animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;
-    }
-
-    &:nth-of-type(3) {
-      background-color: red;
     }
 
     @for $i from 2 through 5 {
@@ -116,10 +115,20 @@ body {
     @include flex(column);
     gap: 26px;
 
+    @media (min-width: $tailleDesktop) {
+      padding: 50px 180px;
+    }
+
     .main__fonctionnement__list {
       @include flex(column);
       gap: 24.9px;
       padding-left: 12px;
+
+      @media (min-width: $tailleDesktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
       .main__fonctionnement__list__article {
         position: relative;
 
@@ -170,10 +179,19 @@ body {
     padding-right: 20px;
     @include flex(column);
     gap: 20px;
-
+    @media (min-width: $tailleDesktop) {
+      padding: 30px 180px;
+    }
     .main__restaurants__list {
       @include flex(column);
       gap: 18px;
+
+      @media (min-width: $tailleDesktop) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+        row-gap: 50px;
+      }
 
       .main__restaurants__list__article {
         @include flex(column);

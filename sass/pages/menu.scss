@@ -11,6 +11,9 @@
     width: 162px;
     padding: 14px 34px;
     box-shadow: none;
+    @media (min-width: $tailleDesktop) {
+      padding: 30px 40%;
+    }
   }
 }
 
@@ -44,14 +47,18 @@
     transform: translateY(0);
   }
 }
+
+.main__image {
+  width: 100%;
+  height: 274px;
+  object-fit: cover;
+}
 .main {
   width: 100%;
   background: $Background-gray;
 
-  .main__image {
-    width: 100%;
-    height: 274px;
-    object-fit: cover;
+  @media (min-width: $tailleDesktop) {
+    background-color: white;
   }
 
   .main__menu {
@@ -63,6 +70,10 @@
     top: -50px;
     @include flex(column);
     gap: 40px;
+
+    @media (min-width: $tailleDesktop) {
+      margin: auto 193px;
+    }
 
     .main__menu__header {
       @include flex(row);

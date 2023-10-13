@@ -6,6 +6,10 @@
     padding: 14px 106px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 15%);
     background-color: white;
+
+    @media (min-width: $tailleDesktop) {
+      padding: 30px 40%;
+    }
   }
 
   .header__localisation {
@@ -13,5 +17,9 @@
     justify-content: space-between;
     padding: 15px 30%;
     font-size: 19px;
+    @media (min-width: $tailleDesktop) {
+      justify-content:center;
+      gap: 17px;
+    }
   }
 }
