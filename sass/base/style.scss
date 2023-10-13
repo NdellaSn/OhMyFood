@@ -10,3 +10,11 @@
   font-size: 24px;
   font-weight: 700;
 }
+
+
+.truncate {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

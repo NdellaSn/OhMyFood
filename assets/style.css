@@ -11,6 +11,13 @@
   font-weight: 700;
 }
 
+.truncate {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 footer {
   padding: 22px 25px;
   background: #353535;
@@ -58,10 +65,10 @@ footer .footer__navigation__link {
   justify-content: center;
 }
 .header .header__logo {
-  padding: 4% 40%;
+  padding: 2% 40%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: white;
-  height: auto;
+  height: 30px;
   object-fit: contain;
 }
 @media (min-width: 767px) {

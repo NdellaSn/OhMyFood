@@ -3,10 +3,10 @@
   justify-content: center;
 
   .header__logo {
-    padding: 4% 40%;
+    padding: 2% 40%;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 15%);
     background-color: white;
-    height: auto;
+    height: 30px;
     object-fit: contain;
     @media (min-width: $tailleDesktop) {
       padding: 30px 36%;
