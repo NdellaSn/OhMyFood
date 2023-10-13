@@ -64,7 +64,7 @@ footer .footer__navigation__link {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 42px;
+  gap: 50px;
   padding: 0 17px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   background: white;
@@ -518,8 +518,6 @@ body {
   justify-content: center;
   margin-right: -46px;
   -webkit-transition: margin 300ms ease-in-out;
-  -moz-transition: margin 300ms ease-in-out;
-  -o-transition: margin 300ms ease-in-out;
   transition: margin 300ms ease-in-out;
 }
 .main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__aside i {
