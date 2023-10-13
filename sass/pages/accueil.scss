@@ -11,7 +11,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   z-index: 99;
-  display: flex; // flex a mettre
+  display: flex; 
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -20,6 +20,11 @@ body {
   animation-delay: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+
+  -webkit-animation: loader;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
 
   .point {
     width: 20px;
@@ -80,6 +85,17 @@ body {
     display: none;
   }
 }
+
+
+@-webkit-keyframes loader {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
+  }
+}
+
 
 .main {
   @include flex(column);

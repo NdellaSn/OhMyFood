@@ -61,6 +61,7 @@ footer .footer__navigation__link {
   padding: 14px 106px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: white;
+  height: 38px;
 }
 @media (min-width: 767px) {
   .header .header__logo {
@@ -105,6 +106,10 @@ body {
   animation-delay: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+  -webkit-animation: loader;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
 }
 .loader .point {
   width: 20px;
@@ -173,6 +178,14 @@ body {
   }
 }
 @keyframes loader {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
+  }
+}
+@-webkit-keyframes loader {
   from {
     display: flex;
   }
