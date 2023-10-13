@@ -61,6 +61,8 @@ footer .footer__navigation__link {
   padding: 16px 40%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: white;
+  height: auto;
+  object-fit: contain;
 }
 @media (min-width: 767px) {
   .header .header__logo {
