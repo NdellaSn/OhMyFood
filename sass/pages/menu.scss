@@ -120,6 +120,7 @@
           &:hover + .main__menu__commande__article__aside,
           &:active + .main__menu__commande__article__aside {
             margin-right: 0;
+            -webkit-margin-collapse: 0;
           }
         }
         .main__menu__commande__article__aside {
@@ -129,6 +130,7 @@
           justify-content: center;
           margin-right: -46px;
           transition: margin-right 300ms ease-in-out;
+          -webkit-transition: margin-right 300ms ease-in-out;
 
           i {
             color: white;
