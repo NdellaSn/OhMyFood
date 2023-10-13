@@ -99,7 +99,7 @@ body {
   align-items: center;
   gap: 10px;
   animation-name: loader;
-  animation-delay: 2s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
