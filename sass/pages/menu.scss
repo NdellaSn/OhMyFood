@@ -1,5 +1,3 @@
-
-
 @keyframes commande {
   from {
     transform: translateY(-100%);
@@ -120,7 +118,6 @@
           &:hover + .main__menu__commande__article__aside,
           &:active + .main__menu__commande__article__aside {
             margin-right: 0;
-            -webkit-margin-collapse: 0;
           }
         }
         .main__menu__commande__article__aside {
@@ -129,8 +126,10 @@
           @include flex(column);
           justify-content: center;
           margin-right: -46px;
-          transition: margin-right 300ms ease-in-out;
-          -webkit-transition: margin-right 300ms ease-in-out;
+          -webkit-transition: margin 300ms ease-in-out;
+          -moz-transition: margin 300ms ease-in-out;
+          -o-transition: margin 300ms ease-in-out;
+          transition: margin 300ms ease-in-out;
 
           i {
             color: white;
