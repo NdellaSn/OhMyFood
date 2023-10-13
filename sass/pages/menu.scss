@@ -117,7 +117,8 @@
 
         .main__menu__commande__article__main {
           width: 100%;
-          &:hover + .main__menu__commande__article__aside {
+          &:hover + .main__menu__commande__article__aside,
+          &:active + .main__menu__commande__article__aside {
             margin-right: 0;
           }
         }

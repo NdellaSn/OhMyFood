@@ -507,7 +507,7 @@ body {
 .main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__main {
   width: 100%;
 }
-.main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__main:hover + .main__menu__commande__article__aside {
+.main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__main:hover + .main__menu__commande__article__aside, .main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__main:active + .main__menu__commande__article__aside {
   margin-right: 0;
 }
 .main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__aside {
