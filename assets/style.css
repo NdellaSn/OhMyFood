@@ -84,11 +84,6 @@ footer .footer__navigation__link {
 body {
   background-color: #eaeaea;
 }
-@media (min-width: 767px) {
-  body {
-    background-color: white;
-  }
-}
 
 .loader {
   width: 100%;
