@@ -1,21 +1,4 @@
-.menu .header {
-  @include flex(row);
-  align-items: center;
-  justify-content: flex-start;
-  gap: 42px;
-  padding: 0 17px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  background: white;
 
-  .header__logo {
-    width: 162px;
-    padding: 14px 34px;
-    box-shadow: none;
-    @media (min-width: $tailleDesktop) {
-      padding: 30px 40%;
-    }
-  }
-}
 
 @keyframes commande {
   from {

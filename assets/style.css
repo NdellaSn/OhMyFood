@@ -61,22 +61,30 @@ footer .footer__navigation__link {
 
 .header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
+  gap: 42px;
+  padding: 0 17px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  background: white;
 }
 .header .header__logo {
-  padding: 2% 40%;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: white;
-  height: 30px;
-  object-fit: contain;
+  width: 162px;
+  padding: 14px 34px;
+  box-shadow: none;
 }
 @media (min-width: 767px) {
   .header .header__logo {
-    padding: 30px 36%;
+    padding: 30px 40%;
   }
 }
-.header .header__localisation {
+
+.menu .header {
+  justify-content: flex-start;
+}
+
+.header__localisation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -84,7 +92,7 @@ footer .footer__navigation__link {
   font-size: 19px;
 }
 @media (min-width: 767px) {
-  .header .header__localisation {
+  .header__localisation {
     justify-content: center;
     gap: 17px;
   }
@@ -381,27 +389,6 @@ body {
 .main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text .main__restaurants__list__article__text__corps {
   font-size: 17px;
   font-weight: 300;
-}
-
-.menu .header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 42px;
-  padding: 0 17px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  background: white;
-}
-.menu .header .header__logo {
-  width: 162px;
-  padding: 14px 34px;
-  box-shadow: none;
-}
-@media (min-width: 767px) {
-  .menu .header .header__logo {
-    padding: 30px 40%;
-  }
 }
 
 @keyframes commande {
