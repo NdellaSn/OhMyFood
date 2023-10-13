@@ -186,10 +186,10 @@ body {
 }
 @-webkit-keyframes loader {
   from {
-    display: flex;
+    -webkit-display: flex;
   }
   to {
-    display: none;
+    -webkit-display: none;
   }
 }
 .main {
