@@ -536,7 +536,6 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-right: -46px;
-  -webkit-transition: margin 300ms ease-in-out;
   transition: margin 300ms ease-in-out;
 }
 .main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__aside i {
@@ -550,7 +549,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 15x;
+  font-size: 15px;
   margin-top: 5px;
 }
 .main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__detail .main__menu__commande__article__detail__description {
