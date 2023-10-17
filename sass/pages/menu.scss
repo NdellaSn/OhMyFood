@@ -61,14 +61,18 @@
       justify-content: space-between;
       align-items: center;
 
+      @media (min-width: $tailleDesktop) {
+        justify-content: center;
+        gap: 15px;
+      }
+
       .main__menu__header__title {
         font-family: Shrikhand;
         font-size: 28px;
         font-weight: 400;
       }
       .main__menu__header__icon {
-        padding-right: 24px;
-        font-size: 20px;
+        font-size: 30px;
       }
     }
 
@@ -112,13 +116,12 @@
         & > * {
           padding: 15px;
         }
-
+        &:hover > .main__menu__commande__article__aside,
+        &:active > .main__menu__commande__article__aside {
+          margin-right: 0;
+        }
         .main__menu__commande__article__main {
           width: 100%;
-          &:hover + .main__menu__commande__article__aside,
-          &:active + .main__menu__commande__article__aside {
-            margin-right: 0;
-          }
         }
         .main__menu__commande__article__aside {
           background-color: $Tertiaire;

@@ -8,16 +8,17 @@
   background: white;
 
   .header__logo {
-    width: 162px;
-    padding: 14px 34px;
+    width: 30%;
+    padding: 14px 20%;
     box-shadow: none;
     @media (min-width: $tailleDesktop) {
-      padding: 30px 40%;
+      width: 20%;
+      padding: 30px 36%;
     }
   }
 }
 
-.menu .header{
+.menu .header {
   justify-content: flex-start;
 }
 
@@ -31,5 +32,3 @@
     gap: 17px;
   }
 }
-
-

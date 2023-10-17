@@ -18,6 +18,38 @@
   text-overflow: ellipsis;
 }
 
+.favoris {
+  font-size: 30px;
+}
+.favoris .favoris__icon {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-text-stroke: 2px white;
+}
+.favoris .favoris__icon--color {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+.favoris .favoris__icon:hover .favoris__icon--color {
+  transform: scale(1);
+  opacity: 1;
+}
+.favoris .favoris__icon:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0px white;
+}
+
 footer {
   padding: 22px 25px;
   background: #353535;
@@ -70,13 +102,14 @@ footer .footer__navigation__link {
   background: white;
 }
 .header .header__logo {
-  width: 162px;
-  padding: 14px 34px;
+  width: 30%;
+  padding: 14px 20%;
   box-shadow: none;
 }
 @media (min-width: 767px) {
   .header .header__logo {
-    padding: 30px 40%;
+    width: 20%;
+    padding: 30px 36%;
   }
 }
 
@@ -306,6 +339,7 @@ body {
 @media (min-width: 767px) {
   .main .main__restaurants {
     padding: 30px 180px;
+    background: #f6f6f6;
   }
 }
 .main .main__restaurants .main__restaurants__list {
@@ -347,46 +381,26 @@ body {
   right: 15px;
   top: 13px;
 }
-.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer {
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article__footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 13px;
   align-items: center;
 }
-.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon {
-  font-size: 20px;
-  position: relative;
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon {
+  font-size: 30px;
 }
-.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon--solid {
-  color: #9356dc;
-  position: absolute;
-  right: 25px;
-  opacity: 0;
-  transition: opacity 300ms ease-in-out;
-}
-.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon--border {
-  position: absolute;
-  opacity: 1;
-  right: 25px;
-  transition: opacity 300ms ease-in-out;
-}
-.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon:hover .main__restaurants__list__article__footer__icon--solid {
-  opacity: 1;
-}
-.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__icon:hover .main__restaurants__list__article__footer__icon--border {
-  opacity: 0;
-}
-.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text {
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text .main__restaurants__list__article__text__title {
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text .main__restaurants__list__article__text__title {
   font-size: 18px;
   font-weight: 700;
 }
-.main .main__restaurants .main__restaurants__list .main__restaurants__list__article .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text .main__restaurants__list__article__text__corps {
+.main .main__restaurants .main__restaurants__list .main__restaurants__list__article__footer .main__restaurants__list__article__footer__text .main__restaurants__list__article__text__corps {
   font-size: 17px;
   font-weight: 300;
 }
@@ -452,14 +466,19 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 767px) {
+  .main .main__menu .main__menu__header {
+    justify-content: center;
+    gap: 15px;
+  }
+}
 .main .main__menu .main__menu__header .main__menu__header__title {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 400;
 }
 .main .main__menu .main__menu__header .main__menu__header__icon {
-  padding-right: 24px;
-  font-size: 20px;
+  font-size: 30px;
 }
 .main .main__menu .main__menu__commande {
   display: flex;
@@ -504,11 +523,11 @@ body {
 .main .main__menu .main__menu__commande .main__menu__commande__article > * {
   padding: 15px;
 }
+.main .main__menu .main__menu__commande .main__menu__commande__article:hover > .main__menu__commande__article__aside, .main .main__menu .main__menu__commande .main__menu__commande__article:active > .main__menu__commande__article__aside {
+  margin-right: 0;
+}
 .main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__main {
   width: 100%;
-}
-.main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__main:hover + .main__menu__commande__article__aside, .main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__main:active + .main__menu__commande__article__aside {
-  margin-right: 0;
 }
 .main .main__menu .main__menu__commande .main__menu__commande__article .main__menu__commande__article__aside {
   background-color: #99e2d0;

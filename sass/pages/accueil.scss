@@ -1,5 +1,5 @@
 body {
-  background-color: $Gyey-2;
+  background-color: $Grey-2;
 }
 
 .loader {
@@ -17,7 +17,6 @@ body {
   animation-delay: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
-
 
   .point {
     width: 20px;
@@ -78,8 +77,6 @@ body {
     visibility: hidden;
   }
 }
-
-
 
 .main {
   @include flex(column);
@@ -181,7 +178,9 @@ body {
     gap: 20px;
     @media (min-width: $tailleDesktop) {
       padding: 30px 180px;
+      background: $Background-gray;
     }
+
     .main__restaurants__list {
       @include flex(column);
       gap: 18px;
@@ -220,53 +219,29 @@ body {
             top: 13px;
           }
         }
+      }
 
-        .main__restaurants__list__article__footer {
-          @include flex(row);
-          justify-content: space-between;
-          padding: 13px;
-          align-items: center;
+      .main__restaurants__list__article__footer {
+        @include flex(row);
+        justify-content: space-between;
+        padding: 13px;
+        align-items: center;
 
-          .main__restaurants__list__article__footer__icon {
-            font-size: 20px;
-            position: relative;
+        .main__restaurants__list__article__footer__icon {
+          font-size: 30px;
+        }
 
-            &--solid {
-              color: $primaire;
-              position: absolute;
-              right: 25px;
-              opacity: 0;
-              transition: opacity 300ms ease-in-out;
-            }
+        .main__restaurants__list__article__footer__text {
+          @include flex(column);
+          gap: 5px;
 
-            &--border {
-              position: absolute;
-              opacity: 1;
-              right: 25px;
-              transition: opacity 300ms ease-in-out;
-            }
-
-            &:hover .main__restaurants__list__article__footer__icon--solid {
-              opacity: 1;
-            }
-
-            &:hover .main__restaurants__list__article__footer__icon--border {
-              opacity: 0;
-            }
+          .main__restaurants__list__article__text__title {
+            font-size: 18px;
+            font-weight: 700;
           }
-
-          .main__restaurants__list__article__footer__text {
-            @include flex(column);
-            gap: 5px;
-
-            .main__restaurants__list__article__text__title {
-              font-size: 18px;
-              font-weight: 700;
-            }
-            .main__restaurants__list__article__text__corps {
-              font-size: 17px;
-              font-weight: 300;
-            }
+          .main__restaurants__list__article__text__corps {
+            font-size: 17px;
+            font-weight: 300;
           }
         }
       }
