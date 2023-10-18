@@ -136,7 +136,7 @@
           }
         }
 
-        .main__menu__commande__article__title {
+        .main__menu__commande__article__title truncate {
           font-size: 18px;
           font-weight: 500;
         }
@@ -153,6 +153,7 @@
 
           .main__menu__commande__article__detail__prix {
             font-weight: 700;
+            width: 15%;
           }
         }
       }
